@@ -220,6 +220,26 @@
   @media(max-width:380px){.nav-inner{grid-template-columns:34px minmax(0,1fr) 40px;column-gap:8px}.nav-back{width:34px}.nav-actions .icon-btn{width:40px}.category-list .category:last-child:nth-child(odd){width:calc(50% - 4px)}}
   @media(prefers-reduced-motion:reduce){.promo-track,.promo-arrow,.promo-dot,.benefit-strip.reveal-on-scroll>div,.benefit-strip .tilt-card,.benefit-strip .tilt-card b{transition:none!important;animation:none!important;scroll-behavior:auto!important}.promo-progress span.is-running{animation:none!important;transform:scaleX(1)}.benefit-strip.reveal-on-scroll>div{opacity:1;transform:none}}
 </style>
+<style>
+  .promo-hero{left:auto;transform:none;width:100%;max-width:1360px;margin:28px auto 36px;padding:11px;border:1px solid rgba(212,175,55,.34);border-radius:23px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018) 44%,rgba(212,175,55,.035));box-shadow:0 22px 58px rgba(0,0,0,.3),inset 0 1px rgba(255,255,255,.05)}
+  .promo-frame{width:100%;margin:0 auto;aspect-ratio:16/9;max-height:none;border:1px solid rgba(255,255,255,.12);border-radius:15px;background:#080d17}
+  .promo-progress{margin:9px 3px 0;border-radius:99px;overflow:hidden}
+  .section-head{display:grid;grid-template-columns:1fr;justify-items:center;gap:6px;margin:42px 0 19px;text-align:center}
+  .section-head h2{font-size:clamp(21px,2.2vw,27px);letter-spacing:-.5px}
+  .section-head span{max-width:100%;text-align:center;font-size:12px}
+  .category-list{grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;align-items:stretch}
+  .category{grid-column:span 2;aspect-ratio:1.48;border-radius:18px;box-shadow:0 12px 30px rgba(0,0,0,.2);transition:transform .35s var(--ease),border-color .35s ease,box-shadow .35s ease,background-size .5s cubic-bezier(.2,.75,.25,1)}
+  .category:nth-child(4){grid-column:2/span 2}.category:nth-child(5){grid-column:4/span 2}
+  .category:hover,.category.active{transform:translateY(-3px);box-shadow:0 19px 38px rgba(0,0,0,.32),0 0 0 1px rgba(212,175,55,.12)}
+  .product-grid{grid-auto-rows:1fr;align-items:stretch;gap:18px}
+  .product{aspect-ratio:.64;min-height:0;border-color:rgba(212,175,55,.16);box-shadow:0 12px 30px rgba(0,0,0,.22);transition:transform .35s var(--ease),border-color .35s ease,box-shadow .35s ease}
+  .product:hover{transform:translateY(-5px);border-color:rgba(212,175,55,.4);box-shadow:0 20px 42px rgba(0,0,0,.34),0 0 0 1px rgba(212,175,55,.1)}
+  .catalog-heading{gap:14px;flex-wrap:wrap}.catalog-heading>div:first-child{min-width:0}.catalog-heading h2{letter-spacing:-.5px}.catalog-heading p{line-height:1.6}
+  @media(max-width:900px){.category-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.category{grid-column:auto;aspect-ratio:1.45;border-radius:16px}.category:nth-child(4),.category:nth-child(5){grid-column:auto}.category-list .category:last-child:nth-child(odd){grid-column:1/-1;width:calc(50% - 6.5px);justify-self:center}}
+  @media(max-width:700px){.promo-hero{width:100%;margin:17px auto 25px;padding:7px;border-radius:17px}.promo-frame{width:100%;aspect-ratio:16/9;max-height:none;border-radius:11px}.promo-progress{margin:7px 2px 0}.section-head{margin:31px 0 14px;gap:5px}.section-head h2{font-size:21px}.section-head span{max-width:100%;font-size:10px}.category-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.category{grid-column:auto;aspect-ratio:1.34;border-radius:14px}.category:nth-child(4),.category:nth-child(5){grid-column:auto}.category-list .category:last-child:nth-child(odd){grid-column:1/-1;width:calc(50% - 5px);justify-self:center}.catalog-heading{align-items:start;margin:27px 0 14px}.catalog-heading h2{font-size:20px}.catalog-heading p{max-width:100%;font-size:10px}.sort-pill{margin-left:auto}}
+  @media(max-width:380px){.promo-hero{padding:6px;border-radius:15px}.promo-frame{border-radius:9px}.category-list{gap:8px}.category{border-radius:12px}.category-list .category:last-child:nth-child(odd){width:calc(50% - 4px)}}
+  @media(prefers-reduced-motion:reduce){.category,.product,.promo-hero{scroll-behavior:auto;transition:none!important}}
+</style>
 </head>
 <body>
   <header class="navbar"><div class="shell nav-inner">
