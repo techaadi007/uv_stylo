@@ -131,8 +131,8 @@
     .photo-modal.open{opacity:1;visibility:visible}
     .photo-modal-dialog{position:relative;width:min(980px,100%);height:min(88dvh,960px);display:grid;grid-template-rows:minmax(0,1fr) auto;gap:12px;padding:14px;border:1px solid rgba(212,175,55,.28);border-radius:20px;background:linear-gradient(145deg,rgba(23,31,48,.98),rgba(10,15,25,.98));box-shadow:0 28px 90px rgba(0,0,0,.62);transform:scale(.975);transition:transform .28s var(--ease)}
     .photo-modal.open .photo-modal-dialog{transform:scale(1)}
-    .photo-modal-image-wrap{min-height:0;display:grid;place-items:center;overflow:hidden;border-radius:12px;background:rgba(4,8,16,.72)}
-    .photo-modal-image{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+    .photo-modal-image-wrap{min-height:0;min-width:0;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:12px;background:rgba(4,8,16,.72)}
+    .photo-modal-image{display:block;flex:none;width:auto!important;height:auto!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;object-position:center}
     .photo-modal-caption{padding:2px 48px 3px 5px;color:#f4f1e8;font:700 13px Manrope;letter-spacing:.2px}
     .photo-modal-close{position:absolute;z-index:2;top:22px;right:22px;display:grid;place-items:center;width:40px;height:40px;border:1px solid rgba(255,255,255,.2);border-radius:12px;background:rgba(8,12,21,.86);color:#fff;font-size:24px;line-height:1;backdrop-filter:blur(10px)}
     .photo-modal-close:hover{border-color:rgba(212,175,55,.7);color:#f1d77a}
@@ -227,6 +227,7 @@
   </script>
 </body>
 </html>
+
 
 
 
